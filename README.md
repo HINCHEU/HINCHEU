@@ -93,8 +93,9 @@ Multi-user ordering for duct fabrication: Three.js calculator UX, **server-side 
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=HINCHEU&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HINCHEU&layout=compact&theme=transparent&hide_border=true&langs_count=8" alt="Top languages"/>
+<!-- Primary stats host (vercel.app) is often 503; mirror is the upstream project's fallback CDN -->
+<img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=HINCHEU&show_icons=true&theme=transparent&hide_border=true" alt="GitHub stats"/>
+<img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=HINCHEU&layout=compact&theme=transparent&hide_border=true&langs_count=8" alt="Top languages"/>
 
 </div>
 
