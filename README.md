@@ -89,15 +89,40 @@ Multi-user ordering for duct fabrication: Three.js calculator UX, **server-side 
 
 ---
 
-### GitHub activity
+### GitHub snapshot
 
-<div align="center">
+<!-- github-stats:start -->
+Last updated: **2026-08-01** (UTC) · fetched with `GITHUB_TOKEN` via the [GitHub REST API](https://docs.github.com/en/rest)
 
-<!-- Primary stats host (vercel.app) is often 503; mirror is the upstream project's fallback CDN -->
-<img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=HINCHEU&show_icons=true&theme=transparent&hide_border=true" alt="GitHub stats"/>
-<img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=HINCHEU&layout=compact&theme=transparent&hide_border=true&langs_count=8" alt="Top languages"/>
+| Metric | Value |
+| --- | ---: |
+| Public repositories | **20** |
+| Total stars (public repos) | **7** |
+| Total forks | **1** |
+| Followers | **3** |
+| Following | **1** |
+| On GitHub since | **Jun 2022** |
 
-</div>
+**Primary languages** (by public repo count): JavaScript · HTML · SCSS · Blade · PHP · Vue
+
+**Featured repos**
+
+| Repository | Stats |
+| --- | --- |
+| [POS_flask](https://github.com/HINCHEU/POS_flask) | ⭐ 1 · 🍴 0 · SCSS |
+| [CENP-Internal-Audit](https://github.com/HINCHEU/CENP-Internal-Audit) | ⭐ 0 · 🍴 0 · Blade |
+| [duct_size_calculator](https://github.com/HINCHEU/duct_size_calculator) | ⭐ 0 · 🍴 0 · JavaScript |
+| [klalork](https://github.com/HINCHEU/klalork) | ⭐ 4 · 🍴 0 · HTML |
+
+**Recently updated:** [POS_flask](https://github.com/HINCHEU/POS_flask) · [duct_size_calculator](https://github.com/HINCHEU/duct_size_calculator) · [CENP-Internal-Audit](https://github.com/HINCHEU/CENP-Internal-Audit) · [klalork](https://github.com/HINCHEU/klalork) · [Flask_product_with_telegram](https://github.com/HINCHEU/Flask_product_with_telegram)
+
+<p align="left">
+<a href="https://github.com/HINCHEU?tab=followers"><img src="https://img.shields.io/github/followers/HINCHEU?style=flat-square&logo=github&label=Followers" alt="GitHub followers"/></a>
+<a href="https://github.com/HINCHEU?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/HINCHEU&query=public_repos&label=Public%20repos&logo=github&color=24292f" alt="Public repositories"/></a>
+</p>
+
+Your **contribution graph** and commit activity appear on this profile automatically below the README — no third-party image service required.
+<!-- github-stats:end -->
 
 ---
 

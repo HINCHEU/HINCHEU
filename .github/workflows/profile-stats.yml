@@ -1,0 +1,123 @@
+name: Refresh profile stats
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/profile-stats.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update README stats from GitHub API
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = 'HINCHEU';
+            const { data: user } = await github.rest.users.getByUsername({ username: owner });
+
+            let repos = [];
+            let page = 1;
+            while (true) {
+              const { data } = await github.rest.repos.listForUser({
+                username: owner,
+                per_page: 100,
+                page,
+                sort: 'updated',
+              });
+              repos = repos.concat(data);
+              if (data.length < 100) break;
+              page += 1;
+            }
+
+            const totalStars = repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
+            const totalForks = repos.reduce((sum, repo) => sum + repo.forks_count, 0);
+
+            const langCount = {};
+            for (const repo of repos) {
+              if (!repo.language) continue;
+              langCount[repo.language] = (langCount[repo.language] || 0) + 1;
+            }
+            const topLangs = Object.entries(langCount)
+              .sort((a, b) => b[1] - a[1])
+              .slice(0, 6)
+              .map(([name]) => name)
+              .join(' · ');
+
+            const recent = repos
+              .filter((repo) => repo.name !== owner)
+              .slice(0, 5)
+              .map((repo) => `[${repo.name}](https://github.com/${owner}/${repo.name})`)
+              .join(' · ');
+
+            const since = new Date(user.created_at).toLocaleDateString('en-US', {
+              month: 'short',
+              year: 'numeric',
+              timeZone: 'UTC',
+            });
+            const updated = new Date().toISOString().slice(0, 10);
+
+            const featuredNames = ['POS_flask', 'CENP-Internal-Audit', 'duct_size_calculator', 'klalork'];
+            const featuredRows = featuredNames
+              .map((name) => repos.find((repo) => repo.name === name))
+              .filter(Boolean)
+              .map(
+                (repo) =>
+                  `| [${repo.name}](https://github.com/${owner}/${repo.name}) | ⭐ ${repo.stargazers_count} · 🍴 ${repo.forks_count} · ${repo.language || '—'} |`,
+              )
+              .join('\n');
+
+            const block = `Last updated: **${updated}** (UTC) · fetched with \`GITHUB_TOKEN\` via the [GitHub REST API](https://docs.github.com/en/rest)
+
+| Metric | Value |
+| --- | ---: |
+| Public repositories | **${user.public_repos}** |
+| Total stars (public repos) | **${totalStars}** |
+| Total forks | **${totalForks}** |
+| Followers | **${user.followers}** |
+| Following | **${user.following}** |
+| On GitHub since | **${since}** |
+
+**Primary languages** (by public repo count): ${topLangs || '—'}
+
+**Featured repos**
+
+| Repository | Stats |
+| --- | --- |
+${featuredRows}
+
+**Recently updated:** ${recent || '—'}
+
+<p align="left">
+<a href="https://github.com/${owner}?tab=followers"><img src="https://img.shields.io/github/followers/${owner}?style=flat-square&logo=github&label=Followers" alt="GitHub followers"/></a>
+<a href="https://github.com/${owner}?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/${owner}&query=public_repos&label=Public%20repos&logo=github&color=24292f" alt="Public repositories"/></a>
+</p>
+
+Your **contribution graph** and commit activity appear on this profile automatically below the README — no third-party image service required.`;
+
+            const fs = require('fs');
+            const path = 'README.md';
+            let readme = fs.readFileSync(path, 'utf8');
+            const start = '<!-- github-stats:start -->';
+            const end = '<!-- github-stats:end -->';
+            const pattern = new RegExp(`${start}[\\s\\S]*?${end}`);
+            if (!pattern.test(readme)) {
+              core.setFailed('README stats markers not found');
+              return;
+            }
+            readme = readme.replace(pattern, `${start}\n${block}\n${end}`);
+            fs.writeFileSync(path, readme);
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: refresh GitHub profile stats'
+          file_pattern: README.md
