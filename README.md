@@ -1,135 +1,158 @@
 <div align="center">
 
-### Hi, I'm HINCHEU
+# Hi there, I'm HIN CHEU 👋
 
-**Full-stack developer** building web systems for real operations — retail, audits, fabrication, and live events.
+**Full-Stack Developer** building robust web systems, internal operations tools, and workflow automation.
 
-[![Email](https://img.shields.io/badge/hincheu16@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hincheu16@gmail.com)
-[![GitHub](https://img.shields.io/badge/@HINCHEU-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HINCHEU)
+<p align="center">
+  <a href="mailto:hincheu16@gmail.com"><img src="https://img.shields.io/badge/Email-hincheu16%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://github.com/HINCHEU"><img src="https://img.shields.io/badge/GitHub-@HINCHEU-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Focus-Laravel%20%7C%20Python%20%7C%20Vue.js-6366F1?style=flat-square" alt="Focus"/>
+  <img src="https://img.shields.io/badge/Architecture-End--to--End%20Systems-0EA5E9?style=flat-square" alt="Architecture"/>
+  <img src="https://img.shields.io/badge/Status-Open%20to%20Collaboration-10B981?style=flat-square" alt="Status"/>
+</p>
 
 </div>
 
 ---
 
-### What I work on
+### 🚀 About Me
 
-I like **end-to-end products**: auth and roles, dashboards, exports, notifications, and deployments people actually use on the job — not demo CRUD.
+I specialize in creating **end-to-end web applications** designed for real operational environments — retail operations, quality audits, parametric fabrication, and live events.
 
-| Focus | How I build it |
-| --- | --- |
-| **Backend** | Laravel 12, Flask, REST-style APIs, server-side validation |
-| **Frontend** | Blade, Vue.js, Tailwind, Bootstrap, Vite |
-| **Data** | MySQL, SQLite, migrations, RBAC (Spatie / custom roles) |
-| **Ops** | Docker Compose, Telegram alerts, PDF/Excel reporting |
+- 💼 **Production-First:** Focused on practical software people actually use on the job — robust role-based access control (RBAC), transactional integrity, and automated workflows.
+- ⚡ **Full Lifecycle:** Experience spanning database architecture, RESTful backend APIs, reactive frontends, and containerized deployment.
+- 📊 **Business Integration:** Seamless data workflows including multi-format exports (PDF, Excel, CSV) and real-time bot alerts.
 
 ---
 
-### Featured projects
+### 🌟 Featured Projects
 
 <table>
-<tr>
-<td width="50%" valign="top">
-
-#### [POS_flask](https://github.com/HINCHEU/POS_flask)
-
-Point-of-sale for day-to-day retail: products, categories, checkout, sales history, and role-based users.
-
-**Stack:** Python · Flask · Vue.js · Bootstrap · SQLite · Telegram Bot
-
-</td>
-<td width="50%" valign="top">
-
-#### [CENP Internal Audit](https://github.com/HINCHEU/CENP-Internal-Audit)
-
-Internal audit platform: schedule events, assign auditors, submit scores and evidence, dashboards, and PDF/Excel/CSV exports.
-
-**Stack:** Laravel 12 · Breeze · MySQL · Vite · Maatwebsite Excel
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### Lucky Draw
-
-Web app for company lucky draws — public draw UI with live APIs, admin for draws/prizes/employees, bulk import, and winner management.
-
-**Stack:** Laravel 12 · Tailwind CSS v4 · Vite · Docker (Nginx + PHP-FPM)
-
-</td>
-<td width="50%" valign="top">
-
-#### CE&P Duct ordering *(in progress)*
-
-Multi-user ordering for duct fabrication: Three.js calculator UX, **server-side area formulas** (28 duct types), approval workflow, workshop queue, cut-list PDFs. Evolving from [duct_size_calculator](https://github.com/HINCHEU/duct_size_calculator).
-
-**Stack:** Laravel 12 · Filament · Spatie Permission · MySQL · Docker
-
-</td>
-</tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4 align="center"><a href="https://github.com/HINCHEU/CENP-Internal-Audit">📋 CENP Internal Audit System</a></h4>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Laravel_12-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel"/>
+        <img src="https://img.shields.io/badge/Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Blade"/>
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
+      </p>
+      <p>Multi-department internal audit management platform for scheduling audits, assigning evaluators, and analyzing organizational performance.</p>
+      <ul>
+        <li>Three-tier Role-Based Access Control (Admin, Super User, Auditor)</li>
+        <li>Checklist scoring, evidence attachment, and draft submission system</li>
+        <li>Automated export engine generating executive reports in PDF, Excel, and CSV</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4 align="center"><a href="https://github.com/HINCHEU/POS_flask">🛒 POS Flask</a></h4>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+        <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask"/>
+        <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue"/>
+        <img src="https://img.shields.io/badge/Telegram_Bot-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"/>
+      </p>
+      <p>Full-featured point-of-sale platform engineered for retail operations with modular architecture and instant remote alerting.</p>
+      <ul>
+        <li>Reactive cashier interface with instant cart calculations powered by Vue.js</li>
+        <li>Inventory management, categories, image processing, and sales history</li>
+        <li>Telegram Bot integration for automated transactional and inventory alerts</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4 align="center">🎁 Lucky Draw Platform</h4>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Laravel_12-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel"/>
+        <img src="https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
+      </p>
+      <p>Live corporate event lottery web system featuring real-time public draw animations and administrative attendee management.</p>
+      <ul>
+        <li>Dynamic public-facing draw display backed by live REST APIs</li>
+        <li>Complete admin suite for managing draws, prize tiers, and bulk employee CSV imports</li>
+        <li>Containerized architecture utilizing Docker (Nginx + PHP-FPM)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4 align="center">📐 CE&P Duct Fabrication Ordering</h4>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Laravel_12-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel"/>
+        <img src="https://img.shields.io/badge/Filament-FDAE4B?style=flat-square&logo=filament&logoColor=black" alt="Filament"/>
+        <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js"/>
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+      </p>
+      <p>Parametric ordering and shop-floor manufacturing queue system for HVAC duct fabrication, evolved from <a href="https://github.com/HINCHEU/duct_size_calculator">duct_size_calculator</a>.</p>
+      <ul>
+        <li>Interactive 3D visualization and dimension calculator using Three.js</li>
+        <li>Server-side geometric area calculation engine for 28 distinct duct types</li>
+        <li>Multi-user approval workflow, workshop queue, and automated cut-list PDF exports</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 ---
 
-### Tech I reach for
+### 🛠️ Tech Stack & Tooling
 
-<p align="left">
-<img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel"/>
-<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask"/>
-<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
-<img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
-</p>
-
----
-
-### GitHub snapshot
-
-<!-- github-stats:start -->
-Last updated: **2026-08-01** (UTC) · fetched with `GITHUB_TOKEN` via the [GitHub REST API](https://docs.github.com/en/rest)
-
-| Metric | Value |
-| --- | ---: |
-| Public repositories | **20** |
-| Total stars (public repos) | **7** |
-| Total forks | **1** |
-| Followers | **3** |
-| Following | **1** |
-| On GitHub since | **Jun 2022** |
-
-**Primary languages** (by public repo count): JavaScript · HTML · SCSS · Blade · PHP · Vue
-
-**Featured repos**
-
-| Repository | Stats |
-| --- | --- |
-| [POS_flask](https://github.com/HINCHEU/POS_flask) | ⭐ 1 · 🍴 0 · SCSS |
-| [CENP-Internal-Audit](https://github.com/HINCHEU/CENP-Internal-Audit) | ⭐ 0 · 🍴 0 · Blade |
-| [duct_size_calculator](https://github.com/HINCHEU/duct_size_calculator) | ⭐ 0 · 🍴 0 · JavaScript |
-| [klalork](https://github.com/HINCHEU/klalork) | ⭐ 4 · 🍴 0 · HTML |
-
-**Recently updated:** [POS_flask](https://github.com/HINCHEU/POS_flask) · [duct_size_calculator](https://github.com/HINCHEU/duct_size_calculator) · [CENP-Internal-Audit](https://github.com/HINCHEU/CENP-Internal-Audit) · [klalork](https://github.com/HINCHEU/klalork) · [Flask_product_with_telegram](https://github.com/HINCHEU/Flask_product_with_telegram)
-
-<p align="left">
-<a href="https://github.com/HINCHEU?tab=followers"><img src="https://img.shields.io/github/followers/HINCHEU?style=flat-square&logo=github&label=Followers" alt="GitHub followers"/></a>
-<a href="https://github.com/HINCHEU?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/HINCHEU&query=public_repos&label=Public%20repos&logo=github&color=24292f" alt="Public repositories"/></a>
-</p>
-
-Your **contribution graph** and commit activity appear on this profile automatically below the README — no third-party image service required.
-<!-- github-stats:end -->
+<table>
+  <tr>
+    <td width="22%"><strong>Backend</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
+      <img src="https://img.shields.io/badge/Laravel_12-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel"/>
+      <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask"/>
+      <img src="https://img.shields.io/badge/REST_APIs-0052CC?style=flat-square&logo=postman&logoColor=white" alt="REST APIs"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="22%"><strong>Frontend</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js"/>
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
+      <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+      <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
+      <img src="https://img.shields.io/badge/Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Blade"/>
+      <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js"/>
+      <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="22%"><strong>Databases</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+      <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="22%"><strong>DevOps & Integrations</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
+      <img src="https://img.shields.io/badge/Telegram_Bot_API-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram API"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
 <div align="center">
 
-*Open to collaboration on practical web apps and internal tools.*
+### 📬 Get in Touch
 
-**Reach me:** [hincheu16@gmail.com](mailto:hincheu16@gmail.com)
+*Open to collaboration on practical web apps, internal tools, and business systems.*
+
+<p align="center">
+  <a href="mailto:hincheu16@gmail.com"><img src="https://img.shields.io/badge/Email-hincheu16%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://github.com/HINCHEU"><img src="https://img.shields.io/badge/GitHub-@HINCHEU-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+</p>
 
 </div>
